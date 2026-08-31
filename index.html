@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Air Hockey Arcade</title>
+  <title>Cyber Air Hockey Arcade</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="app-container">
     <!-- Lobby Card -->
     <div id="lobby-card" class="card">
-      <h1>Air Hockey Arcade</h1>
+      <h1 class="glow-title">AIR HOCKEY PRO</h1>
       <p id="online-counter">Online Players: <span id="online-count">0</span></p>
       <button id="connect-btn">Connect & Play</button>
       <div id="status-message">Click connect to find an opponent</div>
@@ -20,13 +20,30 @@
     <div id="game-container" class="hidden">
       <div id="top-bar">
         <div id="scoreboard">
-          <div class="score-box red">Red: <span id="score-p1">0</span></div>
-          <div class="score-box blue">Blue: <span id="score-p2">0</span></div>
+          <div class="score-box red">RED: <span id="score-p1">0</span></div>
+          <div class="score-box blue">BLUE: <span id="score-p2">0</span></div>
         </div>
-        <button id="leave-btn">Leave Game</button>
+        <button id="leave-btn">Leave</button>
       </div>
+      
       <div id="canvas-wrapper">
         <canvas id="hockey-canvas" width="600" height="900"></canvas>
+      </div>
+
+      <!-- Mobile On-Screen Joystick -->
+      <div id="joystick-zone">
+        <div id="joystick-base">
+          <div id="joystick-stick"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Victory / Game Over Overlay -->
+    <div id="game-over-modal" class="modal hidden">
+      <div class="card modal-card">
+        <h2 id="winner-title">PLAYER WINS!</h2>
+        <p id="winner-score">Final Score: 5 - 3</p>
+        <button id="restart-btn">Play Again</button>
       </div>
     </div>
   </div>
