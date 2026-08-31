@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Hockey Arcade Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app-container">
+    <div id="lobby-card" class="card">
+      <h1>Air Hockey Arcade</h1>
+      <p id="online-counter">Online Players: <span id="online-count">0</span></p>
+      <button id="connect-btn">Connect & Play</button>
+      <div id="status-message">Click connect to find an opponent</div>
+    </div>
+
+    <div id="game-container" class="hidden">
+      <div id="scoreboard">
+        <div class="score-box red">Player 1 (Red): <span id="score-p1">0</span></div>
+        <div class="score-box blue">Player 2 (Blue): <span id="score-p2">0</span></div>
+      </div>
+      <canvas id="hockey-canvas" width="600" height="900"></canvas>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

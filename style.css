@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 320px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+#online-counter {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #94a3b8;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0284c7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #0369a1;
+}
+
+#status-message {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-bottom: 10px;
+}
+
+.score-box {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #1e293b;
+}
+
+.score-box.red { color: #f87171; }
+.score-box.blue { color: #60a5fa; }
+
+#hockey-canvas {
+  background: #090d16;
+  border: 8px solid #334155;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+  cursor: none;
+}
